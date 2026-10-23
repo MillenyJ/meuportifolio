@@ -9,6 +9,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&family=Allura&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </head>
 <body>
   <header class="topbar">
@@ -29,24 +32,18 @@
       <p class="eyebrow">PORTFÓLIO • 2026</p>
       <div class="tiny-dots" aria-hidden="true"><span></span><span></span><span></span></div>
       <div class="intro-title">
-        <h1>Olá, me chamo<br><em>Milleny Jamily</em></h1>
+        <h1>Olá, bem vindos ao<br><em>Meu portfólio!</em></h1>
       </div>
-      <div class="berry-art" aria-hidden="true">
-        <div class="berry-leaf"></div>
-        <div class="berry berry-one"></div>
-        <div class="berry berry-two"></div>
-        <div class="berry berry-three"></div>
-        <div class="berry-shine"></div>
-      </div>
+      
     </section>
 
     <section class="feature" id="sobre">
       <div class="feature-copy">
-        <p class="eyebrow light">UM POUCO DO MEU UNIVERSO</p>
-        <h2>Olá,<br><span>criatividade!</span></h2>
-        <p class="feature-text">Sou uma pessoa criativa que ama explorar cores, composições e histórias visuais. Este espaço reúne projetos, experimentos e ideias feitas com carinho.</p>
+        <p class="eyebrow light">UM POUCO SOBRE MIM</p>
+        <h2>Olá<br><span>Visitante!!!</span></h2>
+        <p class="feature-text">Me chamo Milleny Jamily, sou Tecnica em Informatica para internet (IFRN) e Graduanda em Design (UFRN), aqui mostro um pouco do meu trabalho.</p>
         <a class="pill-link" href="#projetos">Conheça meu trabalho <span>↗</span></a>
-        <span class="scribble">feito com amor ♡</span>
+        <span class="scribble">Espero que goste!</span>
       </div>
       <div class="photo-board" aria-label="Painel de projetos visuais">
         <article class="photo-card card-a">
@@ -75,12 +72,6 @@
       <div class="decor-earbud" aria-hidden="true"></div>
     </section>
 
-    <section class="projects" id="projetos">
-      <div class="section-heading">
-        <p class="eyebrow">SELEÇÃO ESPECIAL</p>
-        <h2>Projetos em destaque <em>♡</em></h2>
-        <p>Projetos produzidos com objetivos academicos e pessoais.</p>
-      </div>
 <section class="projects" id="projetos">
   <div class="section-heading">
     <p class="eyebrow">SELEÇÃO ESPECIAL</p>
@@ -114,7 +105,7 @@
     </a>
 
     <!-- PROJETO 2 -->
-    <a class="project-item" href="#contato">
+    <a class="project-item" href="#carouselProjetos1">
       <div class="project-image-container">
         <img
           class="project-image"
@@ -133,7 +124,7 @@
     </a>
 
     <!-- PROJETO 3 -->
-    <a class="project-item" href="#contato">
+    <a class="project-item" href="#carouselProjetos2">
       <div class="project-image-container">
         <img
           class="project-image"
@@ -144,8 +135,8 @@
 
       <div class="project-meta">
         <div>
-          <h3>Projeto de Comunicação Visual</h3>
-          <p>Identidade · Criatividade</p>
+          <h3>Modelo de convite</h3>
+          <p>Design de um convite de formatura</p>
         </div>
         <span>↗</span>
       </div>
@@ -153,19 +144,79 @@
 
   </div>
 </section>
-```
+<div class="carrosseis-container">
+
+    <!-- CARROSSEL 1 -->
+    <div id="carouselProjetos1" class="carousel slide portfolio-carousel">
+        <div class="carousel-inner rounded-5">
+
+            <div class="carousel-item active">
+                <img src="img/Design sem nome (2).png" class="d-block w-100" alt="Projeto 1">
+            </div>
+
+            <div class="carousel-item">
+                <img src="img/2(1).png" class="d-block w-100" alt="Projeto 2">
+            </div>
+
+            <div class="carousel-item">
+                <img src="img/3(1).png" class="d-block w-100" alt="Projeto 3">
+            </div>
+
+        </div>
+
+        <div class="d-flex justify-content-center gap-2 mt-3">
+            <button class="btn btn-outline-dark" type="button"
+                data-bs-target="#carouselProjetos1"
+                data-bs-slide="prev">
+                ←
+            </button>
+
+            <button class="btn btn-outline-dark" type="button"
+                data-bs-target="#carouselProjetos1"
+                data-bs-slide="next">
+                →
+            </button>
+        </div>
+    </div>
+
+    <!-- CARROSSEL 2 -->
+    <div id="carouselProjetos2" class="carousel slide portfolio-carousel">
+        <div class="carousel-inner rounded-5">
+
+            <div class="carousel-item active">
+                <img src="img/Convido voce para comemorrar.png" class="d-block w-100" alt="Projeto 4">
+            </div>
+
+        </div>
+
+        <div class="d-flex justify-content-center gap-2 mt-3">
+            <button class="btn btn-outline-dark" type="button"
+                data-bs-target="#carouselProjetos2"
+                data-bs-slide="prev">
+                ←
+            </button>
+
+            <button class="btn btn-outline-dark" type="button"
+                data-bs-target="#carouselProjetos2"
+                data-bs-slide="next">
+                →
+            </button>
+        </div>
+    </div>
+
+</div>
+
 
     <section class="contact" id="contato">
       <p class="eyebrow light">VAMOS CRIAR ALGO?</p>
       <h2>Seu próximo projeto<br>pode começar <em>aqui.</em></h2>
-      <a class="pill-link dark-pill" href="mailto:seuemail@exemplo.com">Entre em contato <span>↗</span></a>
-      <p class="contact-note">Substitua este e-mail pelo seu contato.</p>
+      <p class="pill-link dark-pill">jamilylim21@gmail.com </p> 
+      <a class="pill-link dark-pill" href="https://www.linkedin.com/in/milleny-de-lima-484150442/?isSelfProfile=true" target="_blank">Meu linkedin <span>↗</span></a>
     </section>
   </main>
 
   <footer>
-    <a class="footer-logo" href="#inicio">Berrythoria<span>♥</span></a>
-    <p>Feito com carinho e um toque de berry.</p>
+    <a class="footer-logo" href="#inicio">Milleny Jamily<span>♥</span></a>
     <a href="#inicio" class="back-top">Voltar ao topo ↑</a>
   </footer>
 </body>

@@ -255,4 +255,35 @@ footer p { margin: 0; }
 
   .project-image-container { height: 280px; }
   footer p { order: 3; width: 100%; }
+}.carousel {
+    max-width: 900px; /* diminui a largura */
+    margin: 40px auto;
+}
+
+/* Container com os dois carrosséis lado a lado */
+.carrosseis-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 50px auto;
+}
+
+/* Tamanho de cada carrossel */
+.portfolio-carousel {
+    width: 450px;
+}
+
+/* Área interna */
+.portfolio-carousel .carousel-inner {
+    background: transparent;
+    border-radius: 25px;
+}
+
+/* Imagens */
+.portfolio-carousel img {
+    width: 100%;
+    height: 500px;
+    object-fit: contain; /* mostra a imagem inteira */
+    border-radius: 20px;
 }
