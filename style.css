@@ -286,4 +286,15 @@ footer p { margin: 0; }
     height: 500px;
     object-fit: contain; /* mostra a imagem inteira */
     border-radius: 20px;
+}#carouselProjetos1,
+#carouselProjetos2 {
+    width: 350px;
+    margin: 0 auto;
+}
+
+#carouselProjetos1 .carousel-item img,
+#carouselProjetos2 .carousel-item img {
+    width: 100% !important;
+    height: 220px !important;
+    object-fit: contain !important;
 }
